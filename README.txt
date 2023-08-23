@@ -1,0 +1,1 @@
+This website is not to be shared,downloaded or used for any activities. It is strictly property of LNU's Astronomy Society. Any activities and changes done to the website done by outsiders will be dealt by strict action by the law.

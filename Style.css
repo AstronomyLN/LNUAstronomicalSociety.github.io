@@ -1,0 +1,694 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+a{
+    all: unset;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+#wrapper{
+    width: 100vw;
+    height: auto;
+    color: white;
+    background-color: white;
+    position: relative;
+    display: none;
+    animation: Content-appear 1s linear;
+}
+/*flex point*/
+#title,.slides,#article-three,.member-cards,#article-four,#vision,#mission,#article-four-content-two,#article-four-content-two-wrapper,#article-five,#article-six,.special-thanks-cards,#article-six-content-wrapper,#article-seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*pointer events point*/
+#main,#logo,#topic,#article-three,#article-five-content-image,#article-five-content-one,#article-five-content-two,#article-six{
+    pointer-events: none;
+}
+
+#title{
+    top: 0;
+}
+
+#main{
+    width: 100vw;
+    height: 50vw;
+}
+
+#logo{
+    width: 38vw;
+    height: auto;
+    border-radius: 100%;
+    top: -4vw;
+}
+
+#topic{
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 7vw;
+    top: 25vw;
+    text-shadow: 0 0 0.3vw wheat;
+}
+
+#navigation-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    color: white;
+    top: 43vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#logo,#topic,#title,#navigation-bar{
+    position: absolute;
+}
+
+.nav-content{
+    padding-right: 0.52vw;
+    margin-left: 1.52vw;
+    transition: all 0.5s;
+    text-align: center;
+    border-bottom: 0.2vw solid transparent;
+    list-style-type: none;
+}
+
+#nav-content-one,#nav-content-two,#nav-content-three,#nav-content-four{
+    border-right: 0.3vw solid #88a9c3;
+}
+
+.nav-content:hover{
+    border-bottom: 0.2vw solid white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#article-two{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 48vw;
+    padding: 2vw;
+    text-align: center;
+}
+
+#slide-show-container{
+    width: 80vw;
+    height: 40vw;
+    background-color: rgb(34, 34, 34);
+    border-radius: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide-controller,.btn{
+    position: absolute;
+}
+
+#slide-controller{
+    background-color: rgb(34, 34, 34);
+    width: 200%;
+    height: 100%;
+    display: flex;
+    left: 0%;
+    transition: all 0.5s;
+}
+
+.btn{
+    width: 8vw;
+    height: auto;
+    bottom: 1vw;
+}
+
+.btn:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.4vw white);
+}
+
+#btn-right{
+    right: 2vw;
+}
+
+#btn-left{
+    scale: -1;
+    left: 2vw;
+}
+
+#btn-right:hover{
+    scale: 1.05;
+    transition: scale 0.3s;
+}
+
+#btn-left:hover{
+    scale: -1.05;
+    transition: scale 0.3s;
+}
+
+.slides{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 34, 34);
+}
+
+#slide-one{
+    background-color: rgb(34, 34, 34);
+    gap: 1vw;
+}
+
+#slide-two{
+    background-color: black;
+}
+
+.slide-one-content,.slide-two-content{
+    position: relative;
+}
+
+#slide-one-content-one,#slide-two-content-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 20vw;
+    border-radius: 4vw;
+    overflow: hidden;
+}
+
+#slide-one-content-one{
+    top: -1.5vw;
+}
+
+.slide-one-images{
+    width: 40%;
+    height: auto;
+    pointer-events: none;
+}
+
+.slide-two-images{
+    pointer-events: none;
+}
+
+#slide-one-content-two,#slide-two-content-two{
+    font-size: 2.4vw;
+}
+
+#slide-one-content-two{
+    top: -1.5vw;
+}
+
+#slide-one-content-three,#slide-two-content-three{
+    font-family: calibri;
+    font-size: 2vw;
+    top: -2.5vw;
+}
+
+#slide-one-content-four{
+    font-size: 1.7vw;
+    font-family: calibri;
+    top: -0.5vw;
+}
+
+#slide-two-image-one{
+    width: 60%;
+    height: auto;
+}
+
+#slide-two-image-two{
+    width: 40%;
+    background-size: cover;
+}
+
+#slide-two-content-one{
+    top: -4vw;
+}
+
+#slide-two-content-two{
+    top: -2.85vw;
+}
+
+#article-three{
+    width: 100vw;
+    height: auto;
+    color: black;
+    position: relative;
+    top: 48vw;
+    gap: 2vw;
+}
+
+#article-three-content-one{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.commitee-member-row{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1vw;
+}
+
+.member-cards{
+    width: 15vw;
+    height: auto;
+    gap: 0.5vw;
+}
+
+#article-three-content-two{
+    gap: 4vw;
+}
+
+.member-content{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: 1.35vw;
+    font-weight: 540;
+}
+
+.member-photo{
+    width: 12vw;
+    height: 12vw;
+    border-radius: 100%;
+    box-shadow: 0 0 1vw 0.1vw gray;
+}
+
+#member-photo-zero{
+    background: url(Images/samiru.1.jpeg);
+    background-size: cover;
+}
+
+#member-photo-one{
+    background: url(Images/nimsara.1.jpeg);
+    background-size: cover;
+}
+
+#member-photo-two{
+    background: url(Images/ovindu.1.jpeg);
+    background-size: cover;
+}
+
+#member-photo-three{
+    background: url(Images/nikitha.jpeg);
+    background-size: cover;
+}
+
+#member-photo-four{
+    background: url(Images/Helika.1.jpeg);
+    background-size: cover;
+}
+
+/* #member-photo-five{
+    background: url(Images/minul.1.jpg);
+    background-size: cover;
+} */
+
+#member-photo-six{
+    background: url(Images/sachith.1.jpeg);
+    background-size: cover;
+}
+
+#member-photo-seven{
+    background: url(Images/javindu.1.jpeg);
+    background-size: cover;
+}
+
+#member-photo-eight{
+    background: url(Images/dimath.1.jpeg);
+    background-size: cover;
+}
+
+#member-photo-nine{
+    background: url(Images/serene.1.JPG);
+    background-size: cover;
+}
+
+#member-photo-ten{
+    background: url(Images/raaid.1.JPG);
+    background-size: cover;
+}
+
+#member-photo-eleven{
+    background: url(Images/vimukthi.jpeg);
+    background-size: cover;
+}
+
+#article-four{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 50vw;
+    text-align: center;
+    gap: 2vw;
+}
+
+#article-four-content-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 10vw;
+}
+
+#vision,#mission{
+    gap: 2vw;
+}
+
+#divider{
+    height: 14vw;
+    width: 0.3vw;
+    background-color: rgb(51, 51, 51);
+}
+
+.article-four-content-one-head{
+    font-size: 2.4vw;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.897);
+}
+
+.article-four-content-one-body{
+    font-size: 2vw;
+    font-family: calibri;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+#article-four-content-two-wrapper{
+    width: 90vw;
+    height: auto;
+    background-color: rgb(27, 9, 9);
+    border-radius: 2vw;
+    font-size: 4vw;
+    font-family: calibri;
+    position: relative;
+}
+
+#join-us-form{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+iframe{
+    width: 85vw;
+    height: 105vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 1vw;
+}
+
+#article-five{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 52vw;
+    font-family: calibri;
+}
+
+#article-five-content-wrapper{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    background-color: rgb(27, 9, 9);
+    border-radius: 2vw;
+    padding: 2vw;
+    box-shadow: -0.4vw 0.5vw 1vw 0.2vw gray;
+}
+
+#article-five-content-one{
+    text-align: left;
+    font-size: 1.4vw;
+    color: rgb(199, 199, 199);
+}
+
+#article-five-content-two{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    right: 2vw;
+    gap: 1vw;
+    bottom: 0.5vw;
+}
+
+#article-five-content-title{
+    font-size: 1.4vw;
+    color: rgb(199, 199, 199);
+    text-align: center;
+    position: relative;
+    bottom: 1vw;
+}
+
+#article-five-content-image{
+    width: 10vw;
+    height: auto;
+    border-radius: 1vw;
+}
+
+#article-five-content-button{
+    position: absolute;
+    left: 15vw;
+    font-size: 2.2vw;
+    bottom: 1vw;
+    padding: 0.1vw;
+    color: black;
+    width: 10vw;
+    border: 0.2vw solid black;
+    border-radius: 100vw;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+}
+
+#article-five-content-button:hover{
+    cursor: pointer;
+    scale: 1.05;
+    background-color: black;
+    color: white;
+    border: 0.2vw solid white;
+    box-shadow: 0 0 0.5vw 0.01vw aqua;
+}
+
+#join-us-btn{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    border: 1px solid black;
+    font-size: 4vw;
+    border-radius: 100vw;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+#join-us-btn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: 0.2vw solid rgb(27, 9, 9);
+    scale: 1.1;
+    box-shadow: 0 0 1.5vw 0.1vw rgba(0, 255, 255, 0.582);
+}
+
+#join-us-btn::after{
+    bottom: 0;
+}
+
+#join-us-btn::before{
+    top: 0;
+}
+
+#join-us-btn::after,#join-us-btn::before{
+    transition: all 0.5s;
+    border-radius: 100vw;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 0.4vw;
+    width: 0vw;
+    overflow: hidden;
+    background-color: rgb(27, 9, 9);
+}
+
+#join-us-btn:hover::after{
+    width: 22vw;
+}
+
+#join-us-btn:hover::before{
+    width: 22vw;
+}
+
+#article-six{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 55vw;
+    gap: 1.5vw;
+}
+
+#article-six-content-wrapper{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    background-color: black;
+    border-radius: 2vw;
+    padding: 2vw;
+    gap: 1vw;
+}
+
+#article-six-title{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.article-six-special-thanks-cards,#special-thanks-cards-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#special-thanks-cards-wrapper{
+    gap: 10vw;
+}
+
+.special-thanks-cards{
+    gap: 2vw;
+    font-size: 1.8vw;
+    font-family: calibri;
+    text-align: center;
+    width: 22vw;
+}
+
+#special-thanks-image-one,#special-thanks-image-two,#special-thanks-image-three{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    border: 0.2vw solid rgba(255, 255, 255, 0.685);
+}
+
+#special-thanks-image-one{
+    background: url(Images/Mr\ Dinesh\ Weerasinghe.1.jpeg);
+    background-size: cover;
+}
+
+#special-thanks-image-two{
+    background: url(Images/Dr\ Grero.1.jpg);
+    background-size: cover;
+}
+
+#special-thanks-image-three{
+    background: url(Images/Sir\ Latheef\ Imath.1.jpeg);
+    background-size: cover;
+}
+
+#article-seven{
+    position: relative;
+    top: 58vw;
+    width: 100vw;
+    height: 15vw;
+    background-color: rgb(27, 9, 9);
+    font-size: 2.2vw;
+    text-align: right;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.qouted{
+    font-size: 1.8vw;
+}
+
+/*Loader animation start*/
+
+#loader-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#loader-wrapper,#main-rotator,#earth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-rotator,#sun{
+    position: absolute;
+}
+
+#sun{
+    width: 10vw;
+    height: 10vw;
+    background-color: orange;
+    border-radius: 100%;
+    box-shadow: 0 0 5vw 0.52vw red;
+    animation: scale-up 3s ease-in-out infinite;
+}
+
+#main-rotator{
+    width: 28vw;
+    height: 28vw;
+    border-radius: 100%;
+    animation: rotation 5s linear infinite;
+    border: 0.1vw solid gray;
+}
+
+#earth{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    background-color: rgb(0, 162, 255);
+    left: -2.5vw;
+    animation: rotation 1.52s linear infinite;
+}
+
+#moon{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    background-color: gray;
+    left: -4vw;
+}
+
+@keyframes rotation {
+    0%{rotate: 0deg;}
+    100%{rotate: 360deg;}
+}
+
+@keyframes scale-up{
+    0%{scale: 1;}
+    50%{scale: 1.152;}
+    100%{scale: 1;}
+}
+
+/*Loader animation end*/
+
+@keyframes Content-appear {
+    0%{translate: 0 5vw;}
+    100%{translate: 0 0;}
+}
+

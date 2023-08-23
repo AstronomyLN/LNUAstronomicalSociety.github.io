@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Astronomy Society Of Lyceum Nugegoda</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body onload="Load()">
+
+<section id="loader-wrapper">
+
+    <div id="sun"></div>
+    <div id="main-rotator">
+        <div id="earth">
+            <div id="moon"></div>
+        </div>
+    </div>
+        
+</section>
+
+<section id="wrapper">
+
+<header id="article-one">
+<main id="title">
+    <img id="main" src="Images/Main.jpeg" alt="Star-system-image">
+    <img id="logo" src="Images/logo 4k.png" alt="Society-logo">
+    <div id="topic">THE ASTRONOMICAL <br> SOCIETY</div>
+</main>
+
+<nav id="navigation-bar">
+    <a href="#article-one"><li class="nav-content" id="nav-content-one">Home</li></a>
+    <a href="#article-two"><li class="nav-content" id="nav-content-two">Events</li></a>
+    <a href="#article-three"><li class="nav-content" id="nav-content-three">Head Commitee</li></a>
+    <a href="#article-four"><li class="nav-content" id="nav-content-four">Vision & Mission</li></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSclEBc6FSCAwdFZYDbPJTmZX8Fzn1RgqCyxR_8UWIh7tLnbXg/viewform?usp=sf_link"><li class="nav-content" id="nav-content-five">Join Us</li></a>
+</nav>
+</header>
+
+<article id="article-two">
+    <div id="slide-show-container">
+        <div id="slide-controller">
+            <div class="slides" id="slide-one">
+                <div id="slide-one-content-one" class="slide-one-content">
+                    <img src="Images/Slide-one-img-one.png" alt="Slide-one-image-one" id="slide-one-image-one" class="slide-one-images">
+                    <img src="Images/Slide-one-img-two.png" alt="slide-one-image-two" id="slide-one-image-two" class="slide-one-images">
+                    <img src="Images/Slide-one-img-three.png" alt="slide-one-image-three" id="slide-one-image-three" class="slide-one-images">
+                </div>
+                <div id="slide-one-content-two" class="slide-one-content">WASGAMUWA FEILD TRIP</div>
+                <div id="slide-one-content-three" class="slide-one-content">A visit to the  NASA-led Serpentine extraction site in Wasgamuwa national park<br>For more information please visit</div>
+                <a href="https://edu.dailymirror.lk/home/news/1248"><div id="slide-one-content-four" class="slide-one-content">https://edu.dailymirror.lk/home/news/1248</div></a>
+            </div>
+            <div class="slides" id="slide-two">
+                <div class="slide-two-content" id="slide-two-content-one">
+                    <img src="Images/Slide-two-img-one.png" alt="Images/Slide-two-img-one" class="slide-two-images" id="slide-two-image-one">
+                    <img src="Images/Slide-two-img-two.png" alt="Images/Slide-two-img-two" class="slide-two-images" id="slide-two-image-two">
+                </div>
+                <div class="slide-two-content" id="slide-two-content-two">NIGHT CAMP</div>
+                <div class="slide-two-content" id="slide-two-content-three">A stargazing event that will take place on a new moon.Organized with the help<br>of Sri Lanka Planetariums</div>
+            </div>
+        </div>
+        <img src="Images/Button.png" class="btn" id="btn-right" onclick="Change()">
+        <img src="Images/Button.png" class="btn" id="btn-left" onclick="Change()">
+    </div>
+</article>
+
+<article id="article-three">
+    <div id="article-three-content-one">HEAD COMMITTEE</div>
+    <div class="commitee-member-row" id="article-three-content-two">
+        <div class="member-cards">
+            <div id="member-photo-zero" class="member-photo"></div>
+            <div class="member-content">Samiru Kariyawasm<br>President</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-one" class="member-photo"></div>
+            <div class="member-content">Nimsara Aluthgedara<br>Vice President</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-two" class="member-photo"></div>
+            <div class="member-content">Ovindu Wijethunga<br>Secretary</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-three" class="member-photo"></div>
+            <div class="member-content">Nikitha Wadisinha<br>Asst. Secratary</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-four" class="member-photo"></div>
+            <div class="member-content">Helika Athukoralla<br>Head of Media</div>
+        </div>
+        <!-- <div class="member-cards">
+            <div id="member-photo-five" class="member-photo"></div>
+            <div class="member-content">Minul Manmitha<br>Head Boy</div>
+        </div> -->
+    </div>
+    <div class="commitee-member-row" id="article-three-content-three">
+        <div class="member-cards">
+            <div id="member-photo-six" class="member-photo"></div>
+            <div class="member-content">Sachith Edirisinghe<br>Head of Events</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-seven" class="member-photo"></div>
+            <div class="member-content">Javindu Wijayasinghe<br>Treasurer</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-eight" class="member-photo"></div>
+            <div class="member-content">Dimath Abeynayaka<br>Head of Design</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-nine" class="member-photo"></div>
+            <div class="member-content">Serene Abeyesekera<br>Head of PR</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-ten" class="member-photo"></div>
+            <div class="member-content">Raaid Naleem<br>Spokesperson</div>
+        </div>
+        <div class="member-cards">
+            <div id="member-photo-eleven" class="member-photo"></div>
+            <div class="member-content">Vimukthi Liyanage<br>Head of Reps</div>
+        </div>
+    </div>
+</article>
+<br>
+<article id="article-four">
+    <div id="article-four-content-one">
+        <div id="vision">
+            <div class="article-four-content-one-head">VISION</div>
+            <div class="article-four-content-one-body">To educate all of Sri Lanka's youth<br>about the wonders of space and space<br>exploration and the value of it to<br>humanity</div>
+        </div>
+        <div id="divider"></div>
+        <div id="mission">
+            <div class="article-four-content-one-head">MISSION</div>
+            <div class="article-four-content-one-body">To provide young Sri Lankans with the<br>educational resources and skills to help<br>in better understanding the world<br>around us</div>
+        </div>
+    </div>
+    <div id="article-four-content-two">
+        <!--<div id="article-four-content-two-wrapper">
+            <div id="join-us-head">Join us</div>
+            <div id="join-us-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclEBc6FSCAwdFZYDbPJTmZX8Fzn1RgqCyxR_8UWIh7tLnbXg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div> 
+        </div>-->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSclEBc6FSCAwdFZYDbPJTmZX8Fzn1RgqCyxR_8UWIh7tLnbXg/viewform?usp=sf_link"><div id="join-us-btn">Join Us</div></a>
+    </div>
+</article>
+
+<article id="article-five">
+    <div id="article-five-content-wrapper">
+        <div class="article-five-content" id="article-five-content-one">Dear students, parents, and fellow Astronomical enthusiasts,
+        <br><br>
+        Our primary objective in starting this Astronomical Society is to benefit the future generations of curious minds. Astronomy is not just a subject of study but a gateway to endless possibilities and inspiration. By encouraging our young learners to explore the heavens, we hope to spark a lifelong interest in this awe-inspiring field.
+        <br><br>
+         As we look to the future, our ambitions for the Astronomical Society know no bounds. We have an array of captivating events and projects in the pipeline, all aimed at broadening the horizons of our knowledge and exploration. Through guest lectures, interactive sessions and community outreach, we aim to make a lasting impact on the pursuit of astronomy within our school and beyond.
+        <br><br>
+        Today, I am delighted to announce the launch of our Astronomical Society's website. This digital platform will serve as a valuable resource for all astronomy lovers, providing an avenue to improve their knowledge about the celestial world. From educational articles to captivating images of distant galaxies, the website will be a window into the vastness of the universe, inspiring curiosity and intellectual growth.
+        <br><br>
+        I extend my heartfelt gratitude to all the students, teachers, and parents who have supported us in this incredible journey. Together we will continue to reach for the stars, exploring the wonders of the cosmos and fostering a community of passionate astronomers.
+        <br><br>
+        With the launch of our website, I invite each one of you to embark on this celestial voyage with us. Let us nurture our fascination with the universe, for the cosmos has so much to offer to those who dare to look up.
+        <br><br>
+        Wishing you all clear skies and boundless wonder.
+        <br><br>
+        Sincerely,</div>
+        <div class="article-five-content" id="article-five-content-two">
+            <div id="article-five-content-title">Mr. Madhura Loku Kaluge<br>Teacher in-Charge, Astronomical Society<br>Lyceum International School Nugegoda</div>
+            <img src="Images/sir-madhura-image-tic.jpeg" id="article-five-content-image">
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSclEBc6FSCAwdFZYDbPJTmZX8Fzn1RgqCyxR_8UWIh7tLnbXg/viewform?usp=sf_link"><div class="article-five-content" id="article-five-content-button">Join us</div></a>
+    </div>
+</article>
+
+<article id="article-six">
+    <div id="article-six-content-wrapper">
+        <div id="article-six-title">Special thanks</div>
+        <div id="special-thanks-cards-wrapper">
+            <div class="article-six-special-thanks-cards">
+                <div class="special-thanks-cards">
+                    <div id="special-thanks-image-one" alt="Teacher in charge image"></div>
+                    <div class="special-thanks-content">Mr. Dinesh Weerasinghe<br>TIC</div>
+                </div>
+            </div>
+            <div class="article-six-special-thanks-cards">
+                <div class="special-thanks-cards">
+                    <div id="special-thanks-image-two" alt="Founder of Lyceum International School image"></div>
+                    <div class="special-thanks-content">Dr. Mohan Lal Grero<br>Founder Of Lyceum Schools</div>
+                </div>
+            </div>
+            <div class="article-six-special-thanks-cards">
+                <div class="special-thanks-cards">
+                    <div id="special-thanks-image-three" alt="Teacher in charge image"></div>
+                    <div class="special-thanks-content">Mr. Latheef Imath<br>TIC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<footer id="article-seven">
+    "In all things of nature there is something of the marvellous."<br><br><span class="qouted">~Aristotle~</span>
+</footer>
+    
+</section>
+
+<script src="Script.js"></script>
+    
+</body>
+</html>
